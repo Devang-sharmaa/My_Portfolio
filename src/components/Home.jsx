@@ -9,9 +9,9 @@ const Home = () => {
   useEffect(() => {
     const options = {
       strings: [
-        "Welcome to my profile",
-        "I'm Devang Sharma",
-        "I'm a frontend dev",
+        "-Wlc to my profile",
+        "-I'm Devang Sharma",
+        "-I'm a frontend dev",
       ],
       typeSpeed: 50,       // Slightly faster typing speed
       backSpeed: 30,       // Slightly faster backspace speed
