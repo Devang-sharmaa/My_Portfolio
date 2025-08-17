@@ -16,29 +16,61 @@ const Contact = () => {
           data-aos="zoom-in-up"
           data-aos-duration="1000"
         >
-          <a href="https://www.instagram.com/nezz_tokyo/" target="_blank" className="items">
+          <a
+            href="https://www.instagram.com/nezz_tokyo/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="items"
+          >
             <FaInstagram className="icons" />
           </a>
-          {/* <a href="https://www.google.com" target="_blank" className="items">
+
+          {/* Example Facebook placeholder - uncomment if needed */}
+          {/* <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="items"
+          >
             <CiFacebook className="icons" />
           </a> */}
-          <a href="https://www.linkedin.com/in/devang-sharma-535315308/ " target="_blank" className="items">
+
+          <a
+            href="https://www.linkedin.com/in/devang-sharmaa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="items"
+          >
             <CiLinkedin className="icons" />
           </a>
-          {/* <a href="https://www.google.com" target="_blank" className="items">
+
+          {/* Example Twitter placeholder - uncomment if needed */}
+          {/* <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="items"
+          >
             <FaSquareXTwitter className="icons" />
           </a> */}
-          <a href="https://github.com/Devang-sharmaa" target="_blank" className="items">
+
+          <a
+            href="https://github.com/Devang-sharmaa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="items"
+          >
             <FaGithubSquare className="icons" />
           </a>
-          <a
-  href="mailto:devangsh191@gmail.com"
-  target="_blank"
-  className="items"
->
-  <SiGmail className="icons" />
-</a>
 
+          <a
+            href="mailto:devangsh191@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="items"
+          >
+            <SiGmail className="icons" />
+          </a>
         </div>
       </div>
     </>
