@@ -1,8 +1,5 @@
 name: Deploy
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # ✅ add this
-
 on:
   push:
     branches:
@@ -15,10 +12,10 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 18
 
@@ -29,7 +26,7 @@ jobs:
         run: npm run build
 
       - name: Upload production-ready build files
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: production-files
           path: ./dist
