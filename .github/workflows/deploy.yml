@@ -1,5 +1,8 @@
 name: Deploy
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # ✅ add this
+
 on:
   push:
     branches:
@@ -12,10 +15,10 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4   # ✅ updated
+        uses: actions/checkout@v4
 
       - name: Setup Node
-        uses: actions/setup-node@v4   # ✅ updated
+        uses: actions/setup-node@v4
         with:
           node-version: 18
 
@@ -45,7 +48,7 @@ jobs:
           path: ./dist
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4   # ✅ also updated (recommended)
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
